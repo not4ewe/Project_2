@@ -68,7 +68,7 @@ ALTER TABLE merged
 ALTER COLUMN abv TYPE REAL
 USING abv::REAL
 ;
---Deleting table contents to allow pushing agian from Pandas
+--Deleting table contents to allow pushing again from Pandas
 DELETE FROM merged;
 SELECT * FROM merged;
 
@@ -89,7 +89,7 @@ CREATE TABLE results (
 );
 
 
---EXTRA CREDIT
+--EXTRA CREDIT ATTEMPT TO CREATE TABLE POPULATED WITH RESULTS FROM COUNT and AVG ABOVE
 DROP TABLE results;
 DELETE FROM results;
 SELECT * FROM results;
